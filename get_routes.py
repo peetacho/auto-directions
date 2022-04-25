@@ -25,9 +25,14 @@ def parse_step(steps_dict, route_data):
     route_data.append(first_bus_depart_time)
     route_data.append(first_bus_num)
 
-def call_google_api(epoch, destination, origin, key):
-    mode = "transit"
+def call_google_api(epoch):
+    destination = "<YOUR_ADDRESS_DESTINATION>"
+    origin = "<YOUR_ADDRESS_ORIGIN>"
+    key = "<YOUR_API_KEY>"
+
     arrival_time = epoch
+    mode = "transit"
+
     url = "https://maps.googleapis.com/maps/api/directions/json?destination={}&origin={}&mode={}&key={}&arrival_time={}&alternatives=true".format(destination, origin, mode, key, arrival_time)
 
     payload = {}

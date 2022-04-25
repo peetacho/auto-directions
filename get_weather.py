@@ -2,9 +2,11 @@
 import requests
 
 def call_weather_api():
-    lat = "43.7766243700837"
-    lon = "-79.23182029896637"
-    key = "b4a5e5272a6adcb6c12e86fd61981c33"
+    # lat and lon are the lattitude and longitude values of your location 
+    lat = "<ADRESS_LAT>"
+    lon = "<ADRESS_LON>"
+    key = "<YOUR_API_KEY>"
+
     units = "metric"
     url = "https://api.openweathermap.org/data/2.5/weather?lat={}&lon={}&appid={}&units={}".format(lat, lon, key, units)
 

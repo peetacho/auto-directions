@@ -10,11 +10,7 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     next_course_info = calculate_next_class()
-    destination = "Highland Hall, 1265 Military Trail, Scarborough, ON M1C 1A4"
-    origin = "Centennial Place Residence, 937 Progress Ave, Scarborough, ON M1G 3T8"
-    key = "AIzaSyCrkHoB2GwR2J7toXw2ScOApSfIsVJjHDQ"
-
-    routes = call_google_api(next_course_info[0], destination=destination, origin=origin, key=key)
+    routes = call_google_api(next_course_info[0])
     pagename = 'index'
     r_words = ['Awesome', 'Wonderful', 'Incredible', 'Amazing', 'Excellent', 'Brilliant']
     titlevar = random.choice(r_words)
