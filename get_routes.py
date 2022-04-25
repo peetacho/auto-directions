@@ -88,8 +88,7 @@ def parse_min(s):
     return int(s[s.find(":")+1:s.find("m")-1])
 
 def calculate_next_class():
-    # since server is in UTC time, subtract by TIMEZONE_DIFF to get EDT time
-    today_dt = datetime.datetime.today() - datetime.timedelta(hours=TIMEZONE_DIFF)
+    today_dt = datetime.datetime.today()
     today_epoch = today_dt.strftime('%s')
     today_day = today_dt.weekday()
 
