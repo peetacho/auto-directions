@@ -43,6 +43,24 @@ body {
     margin-bottom: 15px;
 }
 
+.weather-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    height: 20px;
+}
+
+.weather-info > p{
+    margin: 0;
+}
+
+.weather-info > img{
+    margin: 0;
+    position: relative;
+    top: -12px;
+}
+
 .styled-table {
     border-collapse: collapse;
     margin: 0;
@@ -86,5 +104,17 @@ body {
     .content{
         margin-top: 40px;
         max-width: 90%;
+    }
+
+    .weather-info{
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /* For mobile phones: */
+
+    .weather-info{
+        height: 40px;
     }
 }

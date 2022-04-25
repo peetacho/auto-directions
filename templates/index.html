@@ -18,6 +18,10 @@
                 <div class="info">
                     <p>Date (EDT): {{today_date}}</p>
                     <p>Next Class: {{next_course_info[1]}} at {{next_course_info[2]}}, {{next_course_info[3]}}</p>
+                    <div class="weather-info">
+                        <p>Weather: {{ weather_info[2] }}°C with {{ weather_info[3] }}% humidity. {{ weather_info[0] }}.</p>
+                        <img src="{{ weather_info[1] }}" width="50px" height="50px"/>
+                    </div>
                 </div>
 
                 <table class="styled-table">
