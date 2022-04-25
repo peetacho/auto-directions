@@ -1,0 +1,46 @@
+{
+    "courses": [
+        {
+            "course_num": "LEC 01",
+            "course_name": "CSCC43H3",
+            "course_room": "SW 319",
+            "course_starting_time": "9:00am",
+            "course_day": "MONDAY"
+        },
+        {
+            "course_num": "TUT 0003",
+            "course_name": "CSCC43H3",
+            "course_room": "IC 212",
+            "course_starting_time": "1:00pm",
+            "course_day": "MONDAY"
+        },
+        {
+            "course_num": "LEC 30",
+            "course_name": "CSCC01H3",
+            "course_room": "IC 220",
+            "course_starting_time": "7:00pm",
+            "course_day": "MONDAY"
+        },
+        {
+            "course_num": "LEC 01",
+            "course_name": "CSCC10H3",
+            "course_room": "SW 143",
+            "course_starting_time": "12:00pm",
+            "course_day": "WEDNESDAY"
+        },
+        {
+            "course_num": "TUT 0002",
+            "course_name": "CSCC10H3",
+            "course_room": "BV 473",
+            "course_starting_time": "11:00am",
+            "course_day": "THURSDAY"
+        },
+        {
+            "course_num": "TUT 0004",
+            "course_name": "CSCC01H3",
+            "course_room": "IC 326",
+            "course_starting_time": "2:00pm",
+            "course_day": "THURSDAY"
+        }
+    ]
+}

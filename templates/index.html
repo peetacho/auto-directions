@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <title>Peter's Auto-Directions Web App</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="main-content">
+                <h1 class="title">
+                    Peter's {{title_var}} Auto-Directions Website
+                </h1>
+                <div class="info">
+                    <p>Date (EDT): {{today_date}}</p>
+                    <p>Next Class: {{next_course_info[1]}} at {{next_course_info[2]}}, {{next_course_info[3]}}</p>
+                </div>
+
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Route</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                            <th>Bus Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for route in routes %}
+                        <tr>
+                            <td>{{ route[0] }}</td>
+                            <td>{{ route[1] }}</td>
+                            <td>{{ route[3] }}</td>
+                            <td>{{ route[2] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
